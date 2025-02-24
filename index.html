@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAP622J3: Probability and Statistics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #2c3e50;
+        }
+        .navbar-brand, .nav-link {
+            color: #ecf0f1 !important;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #3498db, #2ecc71);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px 0;
+        }
+        .accordion-button {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CAP622J3</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#overview">Course Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lesson-plan">Lesson Plan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#slides">Lecture Slides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tutorials">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold">CAP622J3: Probability and Statistics</h1>
+            <p class="lead">Taught by Prof. M. Iqbal Bhat</p>
+            <p>Government Degree College Beerwah | 6th Semester, Bachelor with Computer Applications</p>
+            <a href="#overview" class="btn btn-light btn-lg mt-3">Explore the Course</a>
+        </div>
+    </section>
+
+    <!-- Course Overview Section -->
+    <section id="overview" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Course Overview</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Duration & Credits</h3>
+                        <p>15 weeks (60 lectures: 45 theory + 15 tutorials)<br>Credits: Theory (4) + Practical (2)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Structure</h3>
+                        <p>4 units, 15 lectures each (theory + tutorials)<br>Prerequisite: Fundamental Mathematics</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Assessment</h3>
+                        <p>Midterm (20%): Units 1 & 2<br>Final Exam (40%): Units 3 & 4 + cumulative<br>Assignments/Tutorials (20%)<br>Projects (20%)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lesson Plan Section -->
+    <section id="lesson-plan" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Weekly Lesson Plan</h2>
+            <div class="accordion" id="lessonAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#week1" aria-expanded="true" aria-controls="week1">
+                            Week 1: Introduction to Probability (Unit 1)
+                        </button>
+                    </h2>
+                    <div id="week1" class="accordion-collapse collapse show" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>1. Course overview, random experiments, sample space<br>2. Simple/compound probability, addition theorem<br>3. Independent events, multiplication theorem, conditional probability<br>4. Bayes’ Theorem, total probability law</p>
+                            <p><strong>Tutorial (1):</strong> Problems 1-4 (sample space, red card probability, etc.)</p>
+                            <p><strong>Objective:</strong> Establish foundational probability concepts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week2" aria-expanded="false" aria-controls="week2">
+                            Week 2: Exploring Univariate Data (Unit 1)
+                        </button>
+                    </h2>
+                    <div id="week2" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>5. Types of data, measures of central tendency<br>6. Univariate data in computer applications<br>7. Review and problem-solving<br>8. Transition to Unit 2</p>
+                            <p><strong>Tutorial (1):</strong> Problem 6 (conditional probability)</p>
+                            <p><strong>Objective:</strong> Summarize and interpret single-variable data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week3" aria-expanded="false" aria-controls="week3">
+                            Week 3: Variance and Random Variables (Unit 2)
+                        </button>
+                    </h2>
+                    <div id="week3" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>9. Standard deviation, variance, outliers<br>10. Random variables, PMF, PDF<br>11. Discrete distributions (binomial, geometric)<br>12. Continuous distributions, density curves</p>
+                            <p><strong>Tutorial (1):</strong> Problems 8-9 (random variables, expected value)</p>
+                            <p><strong>Objective:</strong> Understand variability and probability distributions</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Weeks 4-15 condensed for brevity; follow the same structure -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week4" aria-expanded="false" aria-controls="week4">
+                            Week 4: Distributions and Central Limit Theorem (Unit 2)
+                        </button>
+                    </h2>
+                    <div id="week4" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>13. Normal distribution, quantiles<br>14. Joint distributions, covariance<br>15. Central Limit Theorem (CLT)<br>16. CLT in simulations</p>
+                            <p><strong>Tutorial (1):</strong> Problems 10-11 (face card, three 6s)</p>
+                            <p><strong>Objective:</strong> Master key distributions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week5" aria-expanded="false" aria-controls="week5">
+                            Week 5: Wrap-Up Unit 2 & Review
+                        </button>
+                    </h2>
+                    <div id="week5" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>17. Review distributions<br>18. Problem-solving<br>19. Intro to Unit 3<br>20. Midterm prep</p>
+                            <p><strong>Tutorial (1):</strong> Problem 15 (aces with replacement)</p>
+                            <p><strong>Objective:</strong> Consolidate Unit 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week6" aria-expanded="false" aria-controls="week6">
+                            Week 6: Multivariate Data and Correlation (Unit 3)
+                        </button>
+                    </h2>
+                    <div id="week6" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>21. Scatter plots, correlation<br>22. Least squares regression<br>23. Non-linear models<br>24. Practical examples</p>
+                            <p><strong>Tutorial (1):</strong> Problem 16 (coin flip)</p>
+                            <p><strong>Objective:</strong> Analyze variable relationships</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week7" aria-expanded="false" aria-controls="week7">
+                            Week 7: Confidence Intervals (Unit 3)
+                        </button>
+                    </h2>
+                    <div id="week7" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>25. CIs for proportions<br>26. CIs for means<br>27. CIs for differences<br>28. Interpreting CIs</p>
+                            <p><strong>Tutorial (1):</strong> Problem 31 (tea preference CI)</p>
+                            <p><strong>Objective:</strong> Learn statistical inference</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week8" aria-expanded="false" aria-controls="week8">
+                            Week 8: Midterm & Transition to Unit 4
+                        </button>
+                    </h2>
+                    <div id="week8" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>29. Midterm review<br>30. Midterm exam<br>31. Intro to significance tests<br>32. Inference for mean</p>
+                            <p><strong>Tutorial (1):</strong> Problem 28 (income CI)</p>
+                            <p><strong>Objective:</strong> Assess Units 1-2, begin Unit 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week9" aria-expanded="false" aria-controls="week9">
+                            Week 9: Tests of Significance (Unit 4)
+                        </button>
+                    </h2>
+                    <div id="week9" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>33. Sample proportions<br>34. Comparing means/proportions<br>35. Goodness of fit, chi-square<br>36. Two-way tables</p>
+                            <p><strong>Tutorial (1):</strong> Problem 29 (chi-square test)</p>
+                            <p><strong>Objective:</strong> Conduct hypothesis testing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week10" aria-expanded="false" aria-controls="week10">
+                            Week 10: Correlation and Regression (Unit 4)
+                        </button>
+                    </h2>
+                    <div id="week10" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>37. Pearson’s correlation<br>38. Simple linear regression<br>39. Error in prediction<br>40. Applications in CS</p>
+                            <p><strong>Tutorial (1):</strong> Problem 25 (z-score)</p>
+                            <p><strong>Objective:</strong> Model relationships</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week11" aria-expanded="false" aria-controls="week11">
+                            Week 11: Discrete and Continuous Distributions (Review)
+                        </button>
+                    </h2>
+                    <div id="week11" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>41. Binomial, geometric, Poisson<br>42. Normal distribution, z-scores<br>43. Network traffic modeling<br>44. Problem-solving</p>
+                            <p><strong>Tutorial (1):</strong> Problems 21-22 (binomial, Bernoulli)</p>
+                            <p><strong>Objective:</strong> Reinforce distributions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week12" aria-expanded="false" aria-controls="week12">
+                            Week 12: Advanced Applications
+                        </button>
+                    </h2>
+                    <div id="week12" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>45. Poisson in arrivals<br>46. Normal in population data<br>47. Likelihood functions<br>48. Case study: software systems</p>
+                            <p><strong>Tutorial (1):</strong> Problems 23-24 (Poisson, normal)</p>
+                            <p><strong>Objective:</strong> Apply to real-world scenarios</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week13" aria-expanded="false" aria-controls="week13">
+                            Week 13: Practical Projects
+                        </button>
+                    </h2>
+                    <div id="week13" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>49. Intro to R/Python<br>50. Data analysis project<br>51. Troubleshooting<br>52. Presentation prep</p>
+                            <p><strong>Tutorial (1):</strong> Problem 30 (likelihood function)</p>
+                            <p><strong>Objective:</strong> Hands-on analysis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week14" aria-expanded="false" aria-controls="week14">
+                            Week 14: Review and Synthesis
+                        </button>
+                    </h2>
+                    <div id="week14" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>53. Review Units 3 & 4<br>54. Cumulative review<br>55. Mixed problem-solving<br>56. Final exam prep</p>
+                            <p><strong>Tutorial (1):</strong> Mixed problems</p>
+                            <p><strong>Objective:</strong> Prepare for final exam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week15" aria-expanded="false" aria-controls="week15">
+                            Week 15: Final Assessment
+                        </button>
+                    </h2>
+                    <div id="week15" class="accordion-collapse collapse" data-bs-parent="#lessonAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Lectures (4):</strong><br>57. Final review<br>58. Final exam<br>59. Course wrap-up<br>60. Project presentations</p>
+                            <p><strong>Tutorial (1):</strong> Project feedback</p>
+                            <p><strong>Objective:</strong> Assess mastery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lecture Slides Section -->
+    <section id="slides" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Lecture Slides</h2>
+            <div class="card p-4">
+                <h3>First Lecture: February 19, 2025</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Slide 1:</strong> CAP622J3: Probability and Statistics, Prof. M. Iqbal Bhat, Credits: Theory (4) + Practical (2)</li>
+                    <li class="list-group-item"><strong>Slide 2:</strong> Welcome! A foundational course for data-driven decision-making in CS</li>
+                    <li class="list-group-item"><strong>Slide 3:</strong> Learning Outcomes: Probability concepts, statistical inference, expectation/variance</li>
+                    <li class="list-group-item"><strong>Slide 4:</strong> Why It Matters: Algorithms, ML, data analysis, career relevance</li>
+                    <li class="list-group-item"><strong>Slide 5:</strong> Structure: 15 weeks, 4 units (Probability, Distributions, Multivariate, Tests)</li>
+                    <li class="list-group-item"><strong>Slide 6:</strong> Unit 1: Random experiments, sample space, Bayes’ Theorem</li>
+                    <li class="list-group-item"><strong>Slide 7:</strong> Unit 2: Variance, distributions, CLT</li>
+                    <li class="list-group-item"><strong>Slide 8:</strong> Unit 3: Correlation, regression, CIs</li>
+                    <li class="list-group-item"><strong>Slide 9:</strong> Unit 4: Hypothesis testing, regression</li>
+                    <li class="list-group-item"><strong>Slide 10:</strong> Tutorials: Weekly problems (e.g., drawing aces)</li>
+                    <li class="list-group-item"><strong>Slide 11:</strong> Assessment: Midterm (20%), Final (40%), Assignments (20%), Projects (20%)</li>
+                    <li class="list-group-item"><strong>Slide 12:</strong> Textbooks: Hines et al., Ross</li>
+                    <li class="list-group-item"><strong>Slide 13:</strong> Tips: Attend, practice, engage</li>
+                    <li class="list-group-item"><strong>Slide 14:</strong> Let’s Start: Random experiments today</li>
+                </ul>
+                <a href="#" class="btn btn-primary mt-3">Download Slides</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section id="tutorials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Tutorials</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 1</h3>
+                        <p>Problems 1-4: Sample space, red card probability, mutually exclusive/independent events</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 2</h3>
+                        <p>Problem 6: Conditional probability</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 3</h3>
+                        <p>Problems 8-9: Random variables, expected value</p>
+                    </div>
+                </div>
+                <!-- Add more weeks -->
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 4</h3>
+                        <p>Problems 10-11: Face card probability, rolling three 6s</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 5</h3>
+                        <p>Problem 15: Drawing aces with replacement</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 6</h3>
+                        <p>Problem 16: Coin flip probability</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 7</h3>
+                        <p>Problem 31: CI for tea preference</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 8</h3>
+                        <p>Problem 28: CI for income</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 9</h3>
+                        <p>Problem 29: Chi-square test</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 10</h3>
+                        <p>Problem 25: Z-score interpretation</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 11</h3>
+                        <p>Problems 21-22: Binomial, Bernoulli</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 12</h3>
+                        <p>Problems 23-24: Poisson, normal distribution</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 13</h3>
+                        <p>Problem 30: Likelihood function</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 14</h3>
+                        <p>Mixed problems from tutorials</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <h3>Week 15</h3>
+                        <p>Project feedback session</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Practical Projects</h2>
+            <div class="card p-4">
+                <p><strong>Tools:</strong> R, Python, Excel</p>
+                <p><strong>Example Project:</strong> Regression analysis on test scores</p>
+                <p><strong>Schedule:</strong> Week 13: Intro to tools, project work, presentations</p>
+                <p><strong>Objective:</strong> Apply statistical concepts to real data</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Resources</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Textbooks:</strong><br>1. Probability and Statistics in Engineering (Hines et al.)<br>2. Introduction to Probability and Statistics (Ross)</li>
+                <li class="list-group-item"><strong>References:</strong><br>Mood et al., Snedecor & Cochran</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>© 2025 Government Degree College Beerwah | Designed for CAP622J3 by Prof. M. Iqbal Bhat</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
